@@ -26,7 +26,7 @@ export default function Projects() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         style={{
-          fontSize: "18px",
+          fontSize: "11px",
           color: "var(--green)",
           textShadow: "0 0 8px var(--green)",
           animation: "blink 1.2s step-end infinite",
@@ -51,7 +51,7 @@ export default function Projects() {
 
       <p
         style={{
-          fontSize: "11px",
+          fontSize: "9px",
           color: "var(--pink-light)",
           textAlign: "center",
           lineHeight: 2,

@@ -38,7 +38,7 @@ export default function navbar() {
       {/*Logo*/}
       <span
         style={{
-          fontSize: "16px",
+          fontSize: "10px",
           color: "var(--cyan)",
           textShadow: "0 0 8px var (--cyan)",
         }}
@@ -56,7 +56,7 @@ export default function navbar() {
               border: "none",
               cursor: "pointer",
               fontFamily: "'Press Start 2P', monospace",
-              fontSize: "16px",
+              fontSize: "8px",
               color: "var(--pink-light)",
               padding: "4px 8px",
               transition: "color 0.2s",

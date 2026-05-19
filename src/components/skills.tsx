@@ -83,7 +83,7 @@ function Win95Window({
                 borderLeft: "2px solid #ffd9ee",
                 borderBottom: "2px solid var(--pink-dark)",
                 borderRight: "2px solid var(--pink-dark)",
-                fontSize: "10px",
+                fontSize: "8px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -132,7 +132,7 @@ export default function Skills() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         style={{
-          fontSize: "18px",
+          fontSize: "11px",
           color: "var(--green)",
           textShadow: "0 0 8px var(--green)",
           animation: "blink 1.2s step-end infinite",
@@ -145,7 +145,7 @@ export default function Skills() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         style={{
-          fontSize: "18px",
+          fontSize: "28px",
           color: "var(--pink)",
           textShadow: "3px 3px 0 var(--pink-dark)",
           textAlign: "center",
@@ -172,7 +172,7 @@ export default function Skills() {
         transition={{ duration: 0.7 }}
         style={{
           display: "flex",
-          gap: "50px",
+          gap: "24px",
           flexWrap: "wrap",
           justifyContent: "center",
           maxWidth: "1000px",

@@ -121,7 +121,7 @@ export default function Certificate() {
             gap: '10px', minHeight: '140px',
           }}
         >
-          <span style={{ fontSize: '24px' }}>⭐</span>
+          <span style={{ fontSize: '18px' }}>⭐</span>
           <p style={{
             fontSize: '8px', color: 'var(--purple)',
             textAlign: 'center', lineHeight: '2',

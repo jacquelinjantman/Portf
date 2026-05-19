@@ -16,7 +16,7 @@ export default function hero() {
         paddingTop: "80px",
         position: "relative",
         zIndex: 1,
-        gap: "70px",
+        gap: "32px",
       }}
     >
       {/* level */}
@@ -26,7 +26,7 @@ export default function hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         style={{
-          fontSize: "18px",
+          fontSize: "11px",
           color: "var(--green)",
           textShadow: "0 0 8px var(--green)",
           animation: "blink 1.2s step-end infinite",
@@ -56,11 +56,11 @@ export default function hero() {
               key={i}
               style={{
                 position: "absolute",
-                fontSize: "25px",
+                fontSize: "20px",
                 animation: `float 2s ${i * 0.3}s ease-in-out infinite alternate`,
                 top: i === 1 ? "60px" : i === 0 ? "10px" : "auto",
                 bottom: i === 2 ? "30px" : "auto",
-                left: i !== 1 ? "-30px" : "auto",
+                left: i !== 1 ? "-20px" : "auto",
                 right: i === 1 ? "-20px" : "auto",
               }}
             >
@@ -71,10 +71,10 @@ export default function hero() {
           {/* cuerpo consola */}
           <div
             style={{
-              width: "200px",
+              width: "220px",
               background: "var(--pink)",
               border: "3px solid var (--pink-dark)",
-              boxShadow: "40px 40px 80px",
+              boxShadow: "6px 6px 0 #7a003d",
               borderRadius: "8px",
             }}
           >
@@ -93,7 +93,6 @@ export default function hero() {
                 style={{
                   width: "100%",
                   aspectRatio: "4/3",
-                  minHeight: '200px',
                   background: "#0a1a00",
                   display: "flex",
                   alignItems: "center",
@@ -104,14 +103,14 @@ export default function hero() {
                 {/* PERSONAJE PIXEL ART FEMENINO */}
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0px' }}>
   {/* Flor en el pelo */}
-  <div style={{ fontSize: '16px', marginBottom: '-4px', zIndex: 1 }}>🌸</div>
+  <div style={{ fontSize: '36px', marginBottom: '-4px', zIndex: 1 }}>🌸</div>
   {/* Pelo largo */}
-  <div style={{ width: '54px', height: '12px', background: '#2d1a0a', border: '1px solid #1a0800', borderRadius: '4px 4px 0 0' }} />
+  <div style={{ width: '32px', height: '10px', background: '#2d1a0a', border: '1px solid #1a0800', borderRadius: '4px 4px 0 0' }} />
   {/* Cara */}
-  <div style={{ width: '46px', height: '28px', background: '#f4a96a', border: '2px solid #c47a40', position: 'relative' }}>
+  <div style={{ width: '32px', height: '32px', background: '#f4a96a', border: '2px solid #c47a40', position: 'relative' }}>
     {/* Ojos */}
-    <div style={{ width: '7px', height: '5px', background: '#1a0a00', position: 'absolute', top: '10px', left: '5px', borderRadius: '1px' }} />
-    <div style={{ width: '7px', height: '5px', background: '#1a0a00', position: 'absolute', top: '10px', right: '5px', borderRadius: '1px' }} />
+    <div style={{ width: '5px', height: '5px', background: '#1a0a00', position: 'absolute', top: '10px', left: '5px', borderRadius: '1px' }} />
+    <div style={{ width: '5px', height: '5px', background: '#1a0a00', position: 'absolute', top: '10px', right: '5px', borderRadius: '1px' }} />
     {/* Boca sonrisa */}
     <div style={{ width: '10px', height: '4px', borderBottom: '2px solid #c47a40', borderLeft: '2px solid #c47a40', borderRight: '2px solid #c47a40', position: 'absolute', bottom: '5px', left: '50%', transform: 'translateX(-50%)', borderRadius: '0 0 4px 4px' }} />
 </div>
@@ -158,7 +157,7 @@ export default function hero() {
                     top: "10px",
                     left: 0,
                     width: "32px",
-                    height: "12px",
+                    height: "32px",
                     background: "var(--pink-dark)",
                     border: "2px solid #7a003d",
                   }}
@@ -227,7 +226,7 @@ export default function hero() {
             borderLeft: "3px solid #ffd9ee",
             borderBottom: "3px solid var(--pink-dark)",
             borderRight: "3px solid var(--pink-dark)",
-            maxWidth: "360px",
+            maxWidth: "280px",
             fontSize: '10px',
             fontFamily: "'Press Start 2P', monospace",
           }}
@@ -237,12 +236,12 @@ export default function hero() {
             style={{
               background:
                 "linear-gradient(90deg, var(--pink-dark), var(--purple))",
-              padding: "16px 18px",
+              padding: "4px 8px",
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
               color: "#fff",
-              fontSize: "11px",
+              fontSize: "9px",
             }}
           >
             <span>Hello !!</span>
@@ -251,14 +250,14 @@ export default function hero() {
                 <div
                   key={b}
                   style={{
-                    width: "20px",
-                    height: "20px",
+                    width: "14px",
+                    height: "14px",
                     background: "#ffb3da",
                     borderTop: "2px solid #ffd9ee",
                     borderLeft: "2px solid #ffd9ee",
                     borderBottom: "2px solid var(--pink-dark)",
                     borderRight: "2px solid var(--pink-dark)",
-                    fontSize: "12px",
+                    fontSize: "8px",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -275,7 +274,7 @@ export default function hero() {
           <div
             style={{
               padding: "12px 14px",
-              fontSize: "12px",
+              fontSize: "9px",
               color: "#3a003a",
               lineHeight: "2.2",
             }}
