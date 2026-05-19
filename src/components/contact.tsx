@@ -65,7 +65,7 @@ export default function Contact() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        padding: "100px 40px 60px",
+        padding: "80px 20px 40px",
         position: "relative",
         zIndex: 1,
         gap: "48px",
@@ -78,7 +78,7 @@ export default function Contact() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         style={{
-          fontSize: "18px",
+          fontSize: "20px",
           color: "var(--green)",
           textShadow: "0 0 8px var(--green)",
           animation: "blink 1.2s step-end infinite",
@@ -92,7 +92,7 @@ export default function Contact() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         style={{
-          fontSize: "28px",
+          fontSize: "18px",
           color: "var(--pink)",
           textShadow: "3px 3px 0 var(--pink-dark)",
           textAlign: "center",
@@ -137,7 +137,7 @@ export default function Contact() {
               borderBottom: "3px solid #003366",
               borderRight: "3px solid #003366",
               padding: "18px 20px",
-              minWidth: "220px",
+              minWidth: "100px",
               fontFamily: "'Press Start 2P', monospace",
               fontSize: "10px",
               color: "#003366",

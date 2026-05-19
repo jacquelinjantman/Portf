@@ -52,9 +52,9 @@ function Win95Window({
         borderLeft: "3px solid #ffd9ee",
         borderBottom: "3px solid var(--pink-dark)",
         borderRight: "3px solid var(--pink-dark)",
-        minWidth: "200px",
+        minWidth: "100px",
         flex: 1,
-        maxWidth: "280px",
+        maxWidth: "180px",
         fontFamily: "'Press Start 2P', monospace",
       }}
     >
@@ -99,7 +99,7 @@ function Win95Window({
       {/* CONTENIDO */}
       <div
         style={{
-          padding: "14px 16px",
+          padding: "12px 14px",
           fontSize: "9px",
           color: "#3a003a",
           lineHeight: "2.4",
@@ -132,7 +132,7 @@ export default function Skills() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         style={{
-          fontSize: "11px",
+          fontSize: "20px",
           color: "var(--green)",
           textShadow: "0 0 8px var(--green)",
           animation: "blink 1.2s step-end infinite",
@@ -145,7 +145,7 @@ export default function Skills() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         style={{
-          fontSize: "28px",
+          fontSize: "18px",
           color: "var(--pink)",
           textShadow: "3px 3px 0 var(--pink-dark)",
           textAlign: "center",
@@ -172,7 +172,7 @@ export default function Skills() {
         transition={{ duration: 0.7 }}
         style={{
           display: "flex",
-          gap: "24px",
+          gap: "20px",
           flexWrap: "wrap",
           justifyContent: "center",
           maxWidth: "1000px",

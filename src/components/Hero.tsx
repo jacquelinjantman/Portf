@@ -156,8 +156,8 @@ export default function hero() {
                     position: "absolute",
                     top: "10px",
                     left: 0,
-                    width: "32px",
-                    height: "32px",
+                    width: "30px",
+                    height: "30px",
                     background: "var(--pink-dark)",
                     border: "2px solid #7a003d",
                   }}
@@ -193,8 +193,8 @@ export default function hero() {
                 <div />
                 <div
                   style={{
-                    width: "10px",
-                    height: "10px",
+                    width: "8px",
+                    height: "8px",
                     borderRadius: "50%",
                     background: "var(--yellow)",
                     border: "2px solid rgba(0,0,0,0.3)",
