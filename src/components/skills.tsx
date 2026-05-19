@@ -52,9 +52,9 @@ function Win95Window({
         borderLeft: "3px solid #ffd9ee",
         borderBottom: "3px solid var(--pink-dark)",
         borderRight: "3px solid var(--pink-dark)",
-        minWidth: "400px",
+        minWidth: "200px",
         flex: 1,
-        maxWidth: "480px",
+        maxWidth: "280px",
         fontFamily: "'Press Start 2P', monospace",
       }}
     >
@@ -145,7 +145,7 @@ export default function Skills() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         style={{
-          fontSize: "28px",
+          fontSize: "18px",
           color: "var(--pink)",
           textShadow: "3px 3px 0 var(--pink-dark)",
           textAlign: "center",
@@ -156,7 +156,7 @@ export default function Skills() {
 
       <p
         style={{
-          fontSize: "13px",
+          fontSize: "9px",
           color: "var(--pink-light)",
           textAlign: "center",
           lineHeight: 2,
@@ -175,7 +175,7 @@ export default function Skills() {
           gap: "50px",
           flexWrap: "wrap",
           justifyContent: "center",
-          maxWidth: "1500px",
+          maxWidth: "1000px",
         }}
       >
         {/* TECH STACK */}

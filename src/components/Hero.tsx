@@ -71,7 +71,7 @@ export default function hero() {
           {/* cuerpo consola */}
           <div
             style={{
-              width: "400px",
+              width: "200px",
               background: "var(--pink)",
               border: "3px solid var (--pink-dark)",
               boxShadow: "40px 40px 80px",
@@ -258,7 +258,7 @@ export default function hero() {
                     borderLeft: "2px solid #ffd9ee",
                     borderBottom: "2px solid var(--pink-dark)",
                     borderRight: "2px solid var(--pink-dark)",
-                    fontSize: "16px",
+                    fontSize: "12px",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -275,7 +275,7 @@ export default function hero() {
           <div
             style={{
               padding: "12px 14px",
-              fontSize: "16px",
+              fontSize: "12px",
               color: "#3a003a",
               lineHeight: "2.2",
             }}

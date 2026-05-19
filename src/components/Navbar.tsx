@@ -38,7 +38,7 @@ export default function navbar() {
       {/*Logo*/}
       <span
         style={{
-          fontSize: "20px",
+          fontSize: "16px",
           color: "var(--cyan)",
           textShadow: "0 0 8px var (--cyan)",
         }}

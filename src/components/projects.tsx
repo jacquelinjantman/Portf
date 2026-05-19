@@ -40,7 +40,7 @@ export default function Projects() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         style={{
-          fontSize: "28px",
+          fontSize: "18px",
           color: "var(--pink)",
           textShadow: "3px 3px 0 var(--pink-dark)",
           textAlign: "center",
@@ -51,7 +51,7 @@ export default function Projects() {
 
       <p
         style={{
-          fontSize: "13px",
+          fontSize: "11px",
           color: "var(--pink-light)",
           textAlign: "center",
           lineHeight: 2,
@@ -65,9 +65,9 @@ export default function Projects() {
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-          gap: "24px",
-          maxWidth: "1500px",
-          width: "150%",
+          gap: "20px",
+          maxWidth: "1000px",
+          width: "100%",
         }}
       >
         {projects.map((project, i) => (
@@ -82,7 +82,7 @@ export default function Projects() {
               background: "#0d001f",
               border: "2px solid var(--pink)",
               boxShadow: "4px 4px 0 var(--pink-dark)",
-              padding: "24px",
+              padding: "18px",
               cursor: "pointer",
             }}
           >
@@ -91,7 +91,7 @@ export default function Projects() {
               style={{
                 fontSize: "12px",
                 color: "var(--cyan)",
-                marginBottom: "12px",
+                marginBottom: "11px",
               }}
             >
               ▸ {project.mission}
@@ -100,7 +100,7 @@ export default function Projects() {
             {/* TÍTULO */}
             <p
               style={{
-                fontSize: "13px",
+                fontSize: "11px",
                 color: "var(--yellow)",
                 textShadow: "2px 2px 0 #7a6000",
                 marginBottom: "14px",
