@@ -26,7 +26,7 @@ export default function hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         style={{
-          fontSize: "20px",
+          fontSize: "24px",
           color: "var(--green)",
           textShadow: "0 0 8px var(--green)",
           animation: "blink 1.2s step-end infinite",
@@ -71,7 +71,7 @@ export default function hero() {
           {/* cuerpo consola */}
           <div
             style={{
-              width: "220px",
+              width: "200px",
               background: "var(--pink)",
               border: "3px solid var (--pink-dark)",
               boxShadow: "6px 6px 0 #7a003d",
@@ -86,7 +86,7 @@ export default function hero() {
                 borderBottomColor: "var(--pink-dark)",
                 borderRightColor: "var(--pink-dark)",
                 padding: "8px",
-                marginBottom: "12px",
+                marginBottom: "8px",
               }}
             >
               <div
@@ -144,7 +144,7 @@ export default function hero() {
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
-                padding: "0 8px",
+                padding: "0 6px",
               }}
             >
               {/* D-PAD */}
@@ -156,8 +156,8 @@ export default function hero() {
                     position: "absolute",
                     top: "10px",
                     left: 0,
-                    width: "30px",
-                    height: "30px",
+                    width: "20px",
+                    height: "20px",
                     background: "var(--pink-dark)",
                     border: "2px solid #7a003d",
                   }}
