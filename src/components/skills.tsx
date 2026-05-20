@@ -54,7 +54,7 @@ function Win95Window({
         borderRight: "3px solid var(--pink-dark)",
         minWidth: "100px",
         flex: 1,
-        maxWidth: "180px",
+        maxWidth: "280px",
         fontFamily: "'Press Start 2P', monospace",
       }}
     >
@@ -76,8 +76,8 @@ function Win95Window({
             <div
               key={b}
               style={{
-                width: "14px",
-                height: "14px",
+                width: "15px",
+                height: "15px",
                 background: "#ffb3da",
                 borderTop: "2px solid #ffd9ee",
                 borderLeft: "2px solid #ffd9ee",

@@ -155,9 +155,9 @@ export default function hero() {
                   style={{
                     position: "absolute",
                     top: "10px",
-                    left: 0,
-                    width: "20px",
-                    height: "20px",
+                    left: "8px",
+                    width: "30px",
+                    height: "15px",
                     background: "var(--pink-dark)",
                     border: "2px solid #7a003d",
                   }}
@@ -166,9 +166,9 @@ export default function hero() {
                   style={{
                     position: "absolute",
                     top: 0,
-                    left: "10px",
-                    width: "12px",
-                    height: "32px",
+                    left: "15px",
+                    width: "15px",
+                    height: "30px",
                     background: "var(--pink-dark)",
                     border: "2px solid #7a003d",
                   }}
