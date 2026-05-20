@@ -78,7 +78,7 @@ export default function Contact() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         style={{
-          fontSize: "20px",
+          fontSize: "18px",
           color: "var(--green)",
           textShadow: "0 0 8px var(--green)",
           animation: "blink 1.2s step-end infinite",
@@ -190,7 +190,7 @@ export default function Contact() {
                   fontSize: "12px",
                   color: "#ccc",
                   textDecoration: "none",
-                  padding: "12px 14px",
+                  padding: "10px 12px",
                   borderLeft: "3px solid var(--pink)",
                   background: "rgba(255,45,155,0.05)",
                   display: "flex",
@@ -220,8 +220,8 @@ export default function Contact() {
             border: "3px solid var(--pink)",
             boxShadow: "4px 4px 0 var(--pink-dark)",
             padding: "0",
-            minWidth: "100px",
-            maxWidth: "220px",
+            minWidth: "200px",
+            maxWidth: "420px",
             width: "100%",
           }}
         >

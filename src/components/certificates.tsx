@@ -23,7 +23,7 @@ export default function Certificate() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         style={{
-          fontSize: '18px', color: 'var(--green)',
+          fontSize: '20px', color: 'var(--green)',
           textShadow: '0 0 8px var(--green)',
           animation: 'blink 1.2s step-end infinite',
         }}
