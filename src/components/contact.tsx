@@ -166,8 +166,8 @@ export default function Contact() {
             {[
               {
                 icon: "📧",
-                label: "tu@email.com",
-                href: "mailto:tu@email.com",
+                label: "Gmail.com",
+                href: "mailto:jacquelinjantman@email.com",
               },
               {
                 icon: "💼",
@@ -220,8 +220,8 @@ export default function Contact() {
             border: "3px solid var(--pink)",
             boxShadow: "4px 4px 0 var(--pink-dark)",
             padding: "0",
-            minWidth: "300px",
-            maxWidth: "420px",
+            minWidth: "100px",
+            maxWidth: "220px",
             width: "100%",
           }}
         >

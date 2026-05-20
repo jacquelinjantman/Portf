@@ -36,7 +36,7 @@ export default function Certificate() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         style={{
-          fontSize: '28px', color: 'var(--pink)',
+          fontSize: '20px', color: 'var(--pink)',
           textShadow: '3px 3px 0 var(--pink-dark)',
           textAlign: 'center',
         }}
@@ -53,8 +53,8 @@ export default function Certificate() {
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
         gap: '20px',
-        maxWidth: '1200px',
-        width: '120%',
+        maxWidth: '1000px',
+        width: '100%',
       }}>
         
         {(certificates as Certificate[]).map((cert, i) => (
