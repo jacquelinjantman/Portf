@@ -18,22 +18,5 @@ export const projects: Project[] = [
     demo: 'https://totem-app-front.vercel.app/',
     code: 'https://github.com/jacquelinjantman/-TotemApp-Front',
   },
-  {
-    id: 2,
-    mission: 'MISSION 02',
-    title: 'NOMBRE DEL\nPROYECTO 02',
-    description: 'Descripción breve. Qué problema resuelve, cuál fue tu rol y el impacto logrado.',
-    tags: ['Next.js', 'TypeScript', 'MongoDB'],
-    demo: '#',
-    code: '#',
-  },
-  {
-    id: 3,
-    mission: 'MISSION 03',
-    title: 'NOMBRE DEL\nPROYECTO 03',
-    description: 'Descripción breve. Qué problema resuelve, cuál fue tu rol y el impacto logrado.',
-    tags: ['Python', 'Docker', 'REST API'],
-    demo: '#',
-    code: '#',
-  },
+  
 ]
