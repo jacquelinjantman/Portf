@@ -197,8 +197,8 @@ export default function Skills() {
           {education.map((e) => (
             <div key={e.title} style={{ marginBottom: "12px" }}>
               <p style={{ color: "var(--pink-dark)" }}>{e.title}</p>
-              <p style={{ fontSize: "10px", color: "#666" }}>{e.place}</p>
-              <p style={{ fontSize: "10px", color: "#999" }}>▸ {e.year}</p>
+              <p style={{ fontSize: "8px", color: "#666" }}>{e.place}</p>
+              <p style={{ fontSize: "8px", color: "#999" }}>▸ {e.year}</p>
             </div>
           ))}
         </Win95Window>
