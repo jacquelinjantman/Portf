@@ -156,7 +156,7 @@ export default function Skills() {
 
       <p
         style={{
-          fontSize: "8px",
+          fontSize: "10px",
           color: "var(--pink-light)",
           textAlign: "center",
           lineHeight: 2,
@@ -172,7 +172,7 @@ export default function Skills() {
         transition={{ duration: 0.7 }}
         style={{
           display: "flex",
-          gap: "20px",
+          gap: "16px",
           flexWrap: "wrap",
           justifyContent: "center",
           maxWidth: "1000px",
@@ -197,8 +197,8 @@ export default function Skills() {
           {education.map((e) => (
             <div key={e.title} style={{ marginBottom: "12px" }}>
               <p style={{ color: "var(--pink-dark)" }}>{e.title}</p>
-              <p style={{ fontSize: "5px", color: "#666" }}>{e.place}</p>
-              <p style={{ fontSize: "5px", color: "#999" }}>▸ {e.year}</p>
+              <p style={{ fontSize: "10px", color: "#666" }}>{e.place}</p>
+              <p style={{ fontSize: "10px", color: "#999" }}>▸ {e.year}</p>
             </div>
           ))}
         </Win95Window>
