@@ -18,5 +18,25 @@ export const projects: Project[] = [
     demo: 'https://totem-app-front.vercel.app/',
     code: 'https://github.com/jacquelinjantman/-TotemApp-Front',
   },
+
+  {
+    id:2,
+    mission: 'MISSION 02',
+    title: 'POMODORO TASK \n PROYECTO 02',
+    description:'maneja tus tareas, controla tus sesiones de concentracion y toma descansos conscientes',
+    tags:['React'],
+    demo:'https://cutepomodoro.netlify.app/',
+    code: 'https://github.com/jacquelinjantman/TaskPomodoro',
+    
+  },
   
+  {
+    id: 3,
+    mission: 'MISSION 03',
+    title: 'SOBRIETY \n PROYECTO 03',
+    description: ' contador de dias para ayudarte con la sobriedad',
+    tags:['REACT'],
+    demo:'https://spectacular-axolotl-ca04ca.netlify.app/',
+    code:'https://github.com/jacquelinjantman/SoberTime',
+  }
 ]
