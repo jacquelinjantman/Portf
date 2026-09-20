@@ -31,6 +31,15 @@ export const certificates: Certificate[] = [
     year:'2026',
      link: '',
   },
+  {
+    id: 4,
+    icon: '🏆',
+    name: 'Networking Basics',
+    issuer: 'Cisco',
+    year:'2026',
+    link:'https://drive.google.com/file/d/1DJMDvnaqGjgqkbOuBcb1oFchavcuvLrF/view?usp=drive_link',
+
+  },
    
   
 ]

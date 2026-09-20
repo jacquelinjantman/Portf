@@ -25,18 +25,29 @@ export const projects: Project[] = [
     title: 'POMODORO TASK \n PROYECTO 02',
     description:'maneja tus tareas, controla tus sesiones de concentracion y toma descansos conscientes',
     tags:['React'],
-    demo:'https://cutepomodoro.netlify.app/',
+    demo:'',
     code: 'https://github.com/jacquelinjantman/TaskPomodoro',
     
   },
   
   {
     id: 3,
-    mission: 'MISSION 03',
-    title: 'SOBRIETY \n PROYECTO 03',
-    description: ' contador de dias para ayudarte con la sobriedad',
-    tags:['REACT'],
-    demo:'https://spectacular-axolotl-ca04ca.netlify.app/',
-    code:'https://github.com/jacquelinjantman/SoberTime',
-  }
+    mission: 'Mission 03',
+    title: 'Blog-Plants',
+    description: ' As an enthusiast and collector of exotic plants, I created a personal blog—featuring plants I have owned and those I would like to have, along with care tips and information on their origins—to share with others who are as passionate about plants as I am.',
+    tags:['Javascript'],
+    demo:'https://blogplantas.onrender.com/',
+    code:''
+  },
+
+  {
+    id:4,
+    mission: 'Mission 04',
+    title: 'Hospital-backend',
+    description:'A REST API for managing a health center, developed using Java and Spring Boot, featuring JWT authentication, hierarchical role-based authorization, and business logic (appointments, physician availability, user deactivation).',
+    tags:['Java'],
+    demo:'',
+    code:'https://github.com/jacquelinjantman/Hospital-Backend',
+
+  },
 ]
