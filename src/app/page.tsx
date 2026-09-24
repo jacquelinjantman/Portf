@@ -1,15 +1,15 @@
-import StarsBackground from '@/components/starsBackground'
+import {PixelFrame}  from '@/components/PixelFrame'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
-import Skills from '@/components/skills'
-import Projects from '@/components/projects'
-import Certificates from '@/components/certificates'
-import Contact from '@/components/contact'
+import Skills from '@/components/Skills'
+import Projects from '@/components/Projects'
+import Certificates from '@/components/Certificates'
+import Contact from '@/components/Contact'
 
 export default function Home() {
   return (
     <main>
-      <StarsBackground />
+      <PixelFrame />
       <Navbar />
       <Hero />
       <Skills />

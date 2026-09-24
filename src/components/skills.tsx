@@ -1,208 +1,97 @@
-"use client";
-
-import { motion } from "framer-motion";
+import SectionHeading from "./SectionHeading";
 
 
-const techStack = [
-  "C/ C++ / C#/PYTHON/JAVA",
-  "HTML/CSS",
-  "JavaScript / TypeScript",
-  "Angular",
-  "React / Next.js",
-  "Node.js / Express",
-  "PostgreSQL / MongoDB",
-  "REST APIs / GraphQL",
-  "Docker / Git / CI-CD",
-  "Postman",
-  "Jira",
-  "API RESTful",
-];
-
-const softSkills = [
-  "Problem Solving",
-  "Team Collaboration",
-  "Clean Code",
-  "Agile / Scrum",
-  "Communicatión",
-  "Adaptability",
-];
-
-const education = [
+const CATEGORIES: {
+  name: string;
+  skills: { name: string; emoji: string; level: number }[];
+}[] = [
   {
-    title: "Analista en Programacion",
-    place: "Universidad Abierta Interamericana",
-    year: "2026",
+    name: "Lenguajes",
+    skills: [
+      { name: "JavaScript", emoji: "⚡", level: 7 },
+      { name: "TypeScript", emoji: "🔷", level: 6 },
+      { name: "Python", emoji: "🐍", level: 5 },
+      { name: "PHP", emoji: "🐘", level: 4 },
+      { name: "Java", emoji: "☕", level: 6 },
+      { name: "C#", emoji: "🎯", level: 8 },
+    ],
   },
-  { title: "Principio de Ciberseguridad", place: "Coursera", year: "2025" },
-  { title: "Introduccion a la Robotica", place: "Clubargentec", year: "2026" },
+  {
+    name: "Frameworks y librerías",
+    skills: [
+      { name: "React", emoji: "⚛️", level: 7 },
+      { name: "Next.js", emoji: "▲", level: 7 },
+      { name: "Tailwind CSS", emoji: "🎨", level: 7 },
+      { name: "Node.js", emoji: "🟢", level: 5 },
+    ],
+  },
+  {
+    name: "Herramientas",
+    skills: [
+      { name: "Git", emoji: "🌿", level: 6 },
+      { name: "Figma", emoji: "🖌️", level: 4 },
+    ],
+  },
 ];
 
-function Win95Window({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
+const MAX_LEVEL = 8;
+
+function StatBar({ name, emoji, level }: { name: string; emoji: string; level: number }) {
   return (
-    <div
-      style={{
-        background: "#ffb3da",
-        borderTop: "3px solid #ffd9ee",
-        borderLeft: "3px solid #ffd9ee",
-        borderBottom: "3px solid var(--pink-dark)",
-        borderRight: "3px solid var(--pink-dark)",
-        minWidth: "100px",
-        flex: 1,
-        maxWidth: "280px",
-        fontFamily: "'Press Start 2P', monospace",
-      }}
-    >
-      {/* BARRA TÍTULO */}
-      <div
-        style={{
-          background: "linear-gradient(90deg, var(--pink-dark), var(--purple))",
-          padding: "4px 8px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          color: "#fff",
-          fontSize: "9px",
-        }}
-      >
-        <span>{title}</span>
-        <div style={{ display: "flex", gap: "4px" }}>
-          {["_", "□", "✕"].map((b) => (
-            <div
-              key={b}
-              style={{
-                width: "15px",
-                height: "15px",
-                background: "#ffb3da",
-                borderTop: "2px solid #ffd9ee",
-                borderLeft: "2px solid #ffd9ee",
-                borderBottom: "2px solid var(--pink-dark)",
-                borderRight: "2px solid var(--pink-dark)",
-                fontSize: "8px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "#3a003a",
-                cursor: "pointer",
-              }}
-            >
-              {b}
-            </div>
-          ))}
-        </div>
+    <div>
+      <div className="mb-2 flex items-center justify-between">
+        <span className="flex items-center gap-2 font-display text-sm text-tinta">
+          <span aria-hidden="true">{emoji}</span>
+          {name}
+        </span>
+        <span className="font-pixel text-[10px] text-tinta/60">
+          {level}/{MAX_LEVEL}
+        </span>
       </div>
-      {/* CONTENIDO */}
-      <div
-        style={{
-          padding: "12px 14px",
-          fontSize: "9px",
-          color: "#3a003a",
-          lineHeight: "2.4",
-        }}
-      >
-        {children}
+      <div className="flex gap-1">
+        {Array.from({ length: MAX_LEVEL }).map((_, i) => (
+          <span
+            key={i}
+            className={`h-4 flex-1 rounded-sm border-2 border-tinta ${
+              i < level ? "bg-azul" : "bg-tarjeta"
+            }`}
+          />
+        ))}
       </div>
     </div>
   );
 }
+
 export default function Skills() {
   return (
-    <section
-      id="skills"
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        padding: "100px 40px 60px",
-        position: "relative",
-        zIndex: 1,
-        gap: "48px",
-      }}
-    >
-      {/* LEVEL BADGE */}
-      <motion.p
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        style={{
-          fontSize: "20px",
-          color: "var(--green)",
-          textShadow: "0 0 8px var(--green)",
-          animation: "blink 1.2s step-end infinite",
-        }}
-      >
-        ▶ LEVEL 02 — WEAPONS MASTERY
-      </motion.p>
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        style={{
-          fontSize: "18px",
-          color: "var(--pink)",
-          textShadow: "3px 3px 0 var(--pink-dark)",
-          textAlign: "center",
-        }}
-      >
-        Skills
-      </motion.h2>
+    <section id="habilidades" className="px-6 py-24">
+      <div className="mx-auto max-w-3xl">
+        <SectionHeading emoji="✦" label="Skill tree" title="My Skills" accent="cielo" />
 
-      <p
-        style={{
-          fontSize: "10px",
-          color: "var(--pink-light)",
-          textAlign: "center",
-          lineHeight: 2,
-        }}
-      >
-        Tools unlocked in inventory
-      </p>
-      {/* VENTANAS */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 5, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7 }}
-        style={{
-          display: "flex",
-          gap: "16px",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          maxWidth: "1000px",
-        }}
-      >
-        {/* TECH STACK */}
-        <Win95Window title="⚔ Tech Stack">
-          {techStack.map((s) => (
-            <p key={s}>▸ {s}</p>
-          ))}
-        </Win95Window>
+        <div className="sticker rounded-3xl bg-tarjeta p-8 sm:p-10">
+          <div className="mb-8 flex items-center justify-between border-b-[3px] border-dashed border-tinta/25 pb-5">
+            <p className="font-display text-lg text-tinta sm:text-xl">Jacquelin</p>
+            <span className="sticker-btn rounded-full bg-neon px-3 py-1 font-pixel text-[10px] text-white">
+              LV 99
+            </span>
+          </div>
 
-        {/* SOFT SKILLS */}
-        <Win95Window title="✨ Soft Skills">
-          {softSkills.map((s) => (
-            <p key={s}>▸ {s}</p>
-          ))}
-        </Win95Window>
-
-        {/* EDUCATION */}
-        <Win95Window title="🎮 Training Log">
-          {education.map((e) => (
-            <div key={e.title} style={{ marginBottom: "12px" }}>
-              <p style={{ color: "var(--pink-dark)" }}>{e.title}</p>
-              <p style={{ fontSize: "8px", color: "#666" }}>{e.place}</p>
-              <p style={{ fontSize: "8px", color: "#999" }}>▸ {e.year}</p>
-            </div>
-          ))}
-        </Win95Window>
-      </motion.div>
+          <div className="flex flex-col gap-8">
+            {CATEGORIES.map((cat) => (
+              <div key={cat.name}>
+                <p className="mb-4 font-pixel text-[10px] uppercase tracking-wide text-tinta/50">
+                  {cat.name}
+                </p>
+                <div className="grid gap-x-8 gap-y-5 sm:grid-cols-2">
+                  {cat.skills.map((s) => (
+                    <StatBar key={s.name} {...s} />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

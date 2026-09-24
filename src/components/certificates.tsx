@@ -28,7 +28,7 @@ export default function Certificate() {
           animation: 'blink 1.2s step-end infinite',
         }}
       >
-        ▶ LEVEL 04 — ACHIEVEMENTS UNLOCKED
+       
       </motion.p>
 
       <motion.h2
@@ -36,8 +36,8 @@ export default function Certificate() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         style={{
-          fontSize: '20px', color: 'var(--pink)',
-          textShadow: '3px 3px 0 var(--pink-dark)',
+          fontSize: '40px',
+          textShadow: '3px 3px 0 var(--color-azul)',
           textAlign: 'center',
         }}
       >
