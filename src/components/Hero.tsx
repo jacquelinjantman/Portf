@@ -12,8 +12,7 @@ export default function Hero() {
       id="inicio"
       className="relative flex min-h-screen items-center justify-center px-6 py-28"
     >
-          </FlowerField>
-              
+      <FlowerField />
 
       <div className="hero-pop sticker relative w-full max-w-2xl rounded-3xl bg-tarjeta px-8 py-14 text-center sm:px-14">
         <PixelFrame className="inset-0" />
@@ -47,15 +46,15 @@ export default function Hero() {
           className="hero-bounce-in mt-10 flex flex-wrap items-center justify-center gap-4"
           style={{ animationDelay: "0.35s" }}
         >
-          <a
-            href="#proyectos"
+          
+           <a href="#proyectos"
             className="sticker-btn rounded-full bg-azul px-7 py-3 font-display text-sm text-white sm:text-base"
           >
             Ver proyectos
           </a>
 
-          <a
-            href="#contacto"
+          
+           <a href="#contacto"
             className="sticker-btn rounded-full bg-celeste px-7 py-3 font-display text-sm text-tinta sm:text-base"
           >
             Contactar
