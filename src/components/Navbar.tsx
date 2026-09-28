@@ -14,14 +14,14 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b-[3px] border-tinta bg-crema/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b-[3px] border-tinta bg-celeste/90 backdrop-blur">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
        
         
          <a href="#inicio"
           className="sticker-btn flex size-10 items-center justify-center rounded-xl bg-neon font-display text-lg text-white"
         >
-          J
+          PORFTOLIO
         </a>
 
         <ul className="hidden items-center gap-2 sm:flex">

@@ -1,4 +1,5 @@
 import { PixelFrame } from "./PixelFrame";
+import FlowerField from "./FlowerField";
 
 const NAME = "Jacquelin Jantman";
 const ROLE = "Fullstack Developer";
@@ -11,6 +12,9 @@ export default function Hero() {
       id="inicio"
       className="relative flex min-h-screen items-center justify-center px-6 py-28"
     >
+          </FlowerField>
+              
+
       <div className="hero-pop sticker relative w-full max-w-2xl rounded-3xl bg-tarjeta px-8 py-14 text-center sm:px-14">
         <PixelFrame className="inset-0" />
 
