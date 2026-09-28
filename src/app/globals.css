@@ -8,9 +8,9 @@
   --color-rosa: #ff9ec7;
   --color-verde: #8fe3c0;
   --color-lila: #a46bff;
-  --color-azul: #16587B; 
-  --color-celeste: #84B3CE;
-  --color-merino: #F5EEDD;
+  --color-azul: #16587b;
+  --color-celeste: #84b3ce;
+  --color-merino: #f5eedd;
 
   --font-display: var(--font-mochiy);
   --font-body: var(--font-mplus);
@@ -129,8 +129,6 @@ body {
   }
 }
 
-
-
 /* ─────────── Flores que florecen ─────────── */
 .flower-bloom {
   opacity: 0;
@@ -140,24 +138,38 @@ body {
   animation: bloom 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) both;
 }
 @keyframes bloom {
-  from { opacity: 0; transform: scale(0.3) rotate(-15deg); }
-  to   { opacity: 1; transform: scale(1) rotate(0deg); }
+  from {
+    opacity: 0;
+    transform: scale(0.3) rotate(-15deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
 }
 
 .in-view .flower-sway {
   animation: flowerSway 4s ease-in-out infinite;
-  transform-origin: center;
+  transform-box: view-box;
+  transform-origin: 50% 50%;
 }
 @keyframes flowerSway {
-  0%, 100% { transform: rotate(-4deg); }
-  50%      { transform: rotate(4deg); }
+  0%,
+  100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
 }
 
 /* ─────────── Aparición genérica al hacer scroll ─────────── */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.34, 1.2, 0.64, 1);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s cubic-bezier(0.34, 1.2, 0.64, 1);
 }
 .reveal.in-view {
   opacity: 1;
