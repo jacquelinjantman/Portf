@@ -4,14 +4,14 @@ import "./globals.css";
 
 
 const mochiy = Mochiy_Pop_One({
-  subsets: ["latin", "japanese"],
+  subsets: ["latin"],
   weight: "400",
   variable: "--font-mochiy",
   display: "swap",
 });
 
 const mplus = M_PLUS_Rounded_1c({
-  subsets: ["latin", "japanese"],
+  subsets: ["latin"],
   weight: ["400", "500", "700"],
   variable: "--font-mplus",
   display: "swap",
