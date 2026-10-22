@@ -40,6 +40,15 @@ export const certificates: Certificate[] = [
     link:'https://drive.google.com/file/d/1DJMDvnaqGjgqkbOuBcb1oFchavcuvLrF/view?usp=drive_link',
 
   },
+   {
+    id: 5,
+    icon: '🏆',
+    name: 'Networking Devices and Initial Configuration',
+    issuer: 'Cisco',
+    year:'2026',
+    link:'https://drive.google.com/file/d/1dYhpc0cvSnm2xlSJoPkyweomk7Jfh4tY/view?usp=drive_link',
+
+  },
    
   
 ]

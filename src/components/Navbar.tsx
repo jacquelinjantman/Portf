@@ -4,10 +4,12 @@ import { useState } from "react";
 
 const LINKS = [
   { href: "#inicio", label: "Inicio" },
+  { href: "#sobre-mi", label: "Sobre mi"},
   { href: "#habilidades", label: "Habilidades" },
   { href: "#proyectos", label: "Proyectos" },
   { href: "#certificados", label: "Certificados" },
   { href: "#contacto", label: "Contacto" },
+  
 ];
 
 export default function Navbar() {
@@ -18,11 +20,12 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
        
         
-         <a href="#inicio"
-          className="sticker-btn flex size-10 items-center justify-center rounded-xl bg-neon font-display text-lg text-white"
-        >
-          PORFTOLIO
-        </a>
+       <a
+  href="#inicio"
+  className="sticker-btn whitespace-nowrap rounded-xl bg-neon px-3 py-2 font-display text-sm text-white sm:text-lg"
+>
+  PORTFOLIO
+</a>
 
         <ul className="hidden items-center gap-2 sm:flex">
           {LINKS.map((link) => (
