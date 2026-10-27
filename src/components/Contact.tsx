@@ -18,7 +18,7 @@ export default function Contact() {
         <h2 className="mt-5 font-display text-3xl text-tinta sm:text-4xl">{t.contact.title}</h2>
         <p className="mx-auto mt-3 max-w-sm text-sm text-tinta/75">{t.contact.subtitle}</p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <a href={`mailto:${EMAIL}`} className="sticker-btn rounded-full bg-neon px-6 py-3 text-sm text-white">
+          <a href={`mailto:${EMAIL}`} className="sticker-btn rounded-full bg-neon px-6 py-3 text-sm text-tinta">
             {t.contact.email}
           </a>
           <a

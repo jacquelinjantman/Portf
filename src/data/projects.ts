@@ -79,7 +79,10 @@ export const projects: Project[] = [
 
     demo: "",
     code: "https://github.com/jacquelinjantman/TaskPomodoro",
-    images: [], 
+    images: [
+      "/images/pomodoro1.png",
+      "/images/pomodoro2.png",
+    ], 
   },
 
   {
