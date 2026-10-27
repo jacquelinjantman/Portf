@@ -3,6 +3,7 @@
 import { projects } from "@/data/projects";
 import SectionHeading from "./SectionHeading";
 import { useLanguage } from "@/i18n/Language";
+import ProjectCarousel from "./ProjectCarousel";
 
 
 export default function Projects() {
@@ -16,6 +17,7 @@ const { t, locale } = useLanguage();
         <div className="grid gap-6 sm:grid-cols-2">
           {projects.map((p) => (
             <article key={p.id} className="sticker-hover flex flex-col rounded-2xl bg-tarjeta p-6">
+             <ProjectCarousel images={p.images ?? []} alt={p.title[locale]} intervalMs={8000} />
               <span className="mb-3 inline-block w-fit rounded-full bg-tinta px-3 py-1 font-pixel text-[9px] text-crema">
                 {p.mission[locale]}
               </span>

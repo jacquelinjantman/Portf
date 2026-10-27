@@ -8,6 +8,7 @@ export type Project = {
   tags: string[];
   demo: string;
   code: string;
+  images: string[]; 
 };
 
 export const projects: Project[] = [
@@ -45,6 +46,12 @@ export const projects: Project[] = [
 
     demo: "https://totem-app-front.vercel.app/",
     code: "https://github.com/jacquelinjantman/-TotemApp-Front",
+
+    images: [
+      "/images/Totem1.png",
+      "/images/totem2.png",
+      "/images/totem3.png",
+    ]
   },
 
   {
@@ -72,6 +79,7 @@ export const projects: Project[] = [
 
     demo: "",
     code: "https://github.com/jacquelinjantman/TaskPomodoro",
+    images: [], 
   },
 
   {
@@ -99,6 +107,11 @@ export const projects: Project[] = [
 
     demo: "https://blogplantas.onrender.com/",
     code: "",
+    images: [
+      "/images/imagen1.png",
+      "/images/imagen2.png",
+      "/images/imagen3.png",
+    ],
   },
 
   {
@@ -126,5 +139,6 @@ export const projects: Project[] = [
 
     demo: "",
     code: "https://github.com/jacquelinjantman/Hospital-Backend",
+    images: [],
   },
 ];
