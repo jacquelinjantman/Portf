@@ -1,23 +1,26 @@
+"use client";
+
 import SectionHeading from "./SectionHeading";
+import { useLanguage } from "@/i18n/Language";
 
 
 const CATEGORIES: {
-  name: string;
+  categoryKey: "lenguajes" | "frameworks" | "herramientas";
   skills: { name: string; emoji: string; level: number }[];
 }[] = [
   {
-    name: "Lenguajes",
+    categoryKey: "lenguajes",
     skills: [
       { name: "JavaScript", emoji: "⚡", level: 7 },
       { name: "TypeScript", emoji: "🔷", level: 6 },
       { name: "Python", emoji: "🐍", level: 5 },
       { name: "PHP", emoji: "🐘", level: 4 },
-      { name: "Java", emoji: "☕", level: 6 },
-      { name: "C#", emoji: "🎯", level: 8 },
+      { name: "Java", emoji: "☕", level: 3 },
+      { name: "C#", emoji: "🎯", level: 3 },
     ],
   },
   {
-    name: "Frameworks y librerías",
+    categoryKey: "frameworks",
     skills: [
       { name: "React", emoji: "⚛️", level: 7 },
       { name: "Next.js", emoji: "▲", level: 7 },
@@ -26,7 +29,7 @@ const CATEGORIES: {
     ],
   },
   {
-    name: "Herramientas",
+    categoryKey: "herramientas",
     skills: [
       { name: "Git", emoji: "🌿", level: 6 },
       { name: "Figma", emoji: "🖌️", level: 4 },
@@ -53,7 +56,7 @@ function StatBar({ name, emoji, level }: { name: string; emoji: string; level: n
           <span
             key={i}
             className={`h-4 flex-1 rounded-sm border-2 border-tinta ${
-              i < level ? "bg-azul" : "bg-tarjeta"
+              i < level ? "bg-neon" : "bg-tarjeta"
             }`}
           />
         ))}
@@ -63,10 +66,12 @@ function StatBar({ name, emoji, level }: { name: string; emoji: string; level: n
 }
 
 export default function Skills() {
+  const { t } = useLanguage();
+
   return (
     <section id="habilidades" className="px-6 py-24">
       <div className="mx-auto max-w-3xl">
-        <SectionHeading emoji="✦" label="Skill tree" title="My Skills" accent="cielo" />
+        <SectionHeading emoji="✦" label={t.skills.label} title={t.skills.title} accent="cielo" />
 
         <div className="sticker rounded-3xl bg-tarjeta p-8 sm:p-10">
           <div className="mb-8 flex items-center justify-between border-b-[3px] border-dashed border-tinta/25 pb-5">
@@ -78,9 +83,9 @@ export default function Skills() {
 
           <div className="flex flex-col gap-8">
             {CATEGORIES.map((cat) => (
-              <div key={cat.name}>
+              <div key={cat.categoryKey}>
                 <p className="mb-4 font-pixel text-[10px] uppercase tracking-wide text-tinta/50">
-                  {cat.name}
+                  {t.skills.categories[cat.categoryKey]}
                 </p>
                 <div className="grid gap-x-8 gap-y-5 sm:grid-cols-2">
                   {cat.skills.map((s) => (

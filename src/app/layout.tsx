@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
-import { Mochiy_Pop_One, M_PLUS_Rounded_1c, Press_Start_2P } from "next/font/google";
+import {
+  Mochiy_Pop_One,
+  M_PLUS_Rounded_1c,
+  Press_Start_2P,
+} from "next/font/google";
+import { LanguageProvider } from "../i18n/Language";
 import "./globals.css";
-
 
 const mochiy = Mochiy_Pop_One({
   subsets: ["latin"],
@@ -24,7 +28,6 @@ const pixel2p = Press_Start_2P({
   display: "swap",
 });
 
-
 export const metadata: Metadata = {
   title: "Jacquelin Jantman· Fullstack Developer",
   description: "Portfolio de proyectos web.",
@@ -35,8 +38,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es">
-      <body className={`${mochiy.variable} ${mplus.variable} ${pixel2p.variable} antialiased`}>
-        {children}
+      <body
+        className={`${mochiy.variable} ${mplus.variable} ${pixel2p.variable} antialiased`}
+      >
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );

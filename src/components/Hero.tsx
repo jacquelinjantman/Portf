@@ -1,12 +1,15 @@
+"use client";
+
 import { PixelFrame } from "./PixelFrame";
 import FlowerField from "./FlowerField";
+import { useLanguage } from "@/i18n/Language";
+
 
 const NAME = "Jacquelin Jantman";
-const ROLE = "Fullstack Developer";
-const INTRO =
-  "Diseño y construyo sitios y aplicaciones con Next.js, cuidando cada detalle.";
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section
       id="inicio"
@@ -18,10 +21,10 @@ export default function Hero() {
         <PixelFrame className="inset-0" />
 
         <span
-          className="wiggle sticker-btn absolute -top-6 left-1/2 inline-flex -translate-x-1/2 items-center gap-2 rounded-full bg-merino px-4 py-2 font-display text-[60px]"
+          className="wiggle sticker-btn absolute -top-6 left-1/2 inline-flex -translate-x-1/2 items-center gap-2 rounded-full bg-merino px-4 py-2 font-display text-sm"
           style={{ animationDelay: "0.1s" }}
         >
-          Hi !
+          {t.hero.greeting}
         </span>
 
         <h1 className="bubble-text hero-bounce-in mt-4 font-display text-5xl leading-[1.3] sm:text-6xl md:text-7xl">
@@ -32,32 +35,32 @@ export default function Hero() {
           className="hero-bounce-in sticker-btn mx-auto mt-6 inline-block rounded-full bg-merino px-6 py-2 font-display text-lg sm:text-xl"
           style={{ animationDelay: "0.15s" }}
         >
-          {ROLE}
+          {t.hero.role}
         </p>
 
         <p
           className="hero-bounce-in mx-auto mt-6 max-w-md text-base text-tinta/80 sm:text-lg"
           style={{ animationDelay: "0.25s" }}
         >
-          {INTRO}
+          {t.hero.intro}
         </p>
 
         <div
           className="hero-bounce-in mt-10 flex flex-wrap items-center justify-center gap-4"
           style={{ animationDelay: "0.35s" }}
         >
-          
-           <a href="#proyectos"
+          <a
+            href="#proyectos"
             className="sticker-btn rounded-full bg-azul px-7 py-3 font-display text-sm text-white sm:text-base"
           >
-            Ver proyectos
+            {t.hero.ctaProjects}
           </a>
 
-          
-           <a href="#contacto"
+          <a
+            href="#contacto"
             className="sticker-btn rounded-full bg-celeste px-7 py-3 font-display text-sm text-tinta sm:text-base"
           >
-            Contactar
+            {t.hero.ctaContact}
           </a>
         </div>
       </div>

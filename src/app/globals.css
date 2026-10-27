@@ -163,7 +163,7 @@ body {
   }
 }
 
-/* ─────────── Aparición genérica al hacer scroll ─────────── */
+
 .reveal {
   opacity: 0;
   transform: translateY(24px);

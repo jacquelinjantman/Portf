@@ -1,29 +1,23 @@
+
+"use client";
 import SectionHeading from "./SectionHeading";
 import Image from "next/image";
 import Fotocv from "../assets/fotoCv.png";
-
-const BIO =
-  "Soy Desarrolladora Fullstack, construyo desde lo que es la base de datos hasta el ultimo detalle de la interfaz, trabaje con React, Next.js, Node.js, Java/Spring Boot , C# y SQL SERVER. Me gusta el codigo limpio y soluciones que verdaderamente resuelvan problemas. ";
-
-// ✏️ Datos curiosos o intereses, se muestran como chips
-const FUN_FACTS = [
-  { emoji: "🌿", label: "Coleccionista de plantas exóticas" },
-  { emoji: "☕", label: "Café antes que nada" },
-  { emoji: "📖", label: "Fan de los libros de cualquier genero" },
-  { emoji: "📚", label: "Siempre aprendiendo algo nuevo" },
-];
+import { useLanguage } from "@/i18n/Language";
 
 
-const CV_PATH = "\public\Jacquelin_Jantman_CV.pdf";
 
 export default function About() {
+
+  const {t} = useLanguage();
+
   return (
     <section id="sobre-mi" className="px-6 py-24">
       <div className="mx-auto max-w-3xl">
         <SectionHeading
           emoji="🌸"
-          label="Character info"
-          title="Sobre mí"
+          label={t.about.label}
+          title={t.about.title}
           accent="rosa"
         />
 
@@ -33,14 +27,13 @@ export default function About() {
             <div className="sticker-btn flex size-28 shrink-0 items-center justify-center rounded-full bg-rosa text-5xl">
               <Image src={Fotocv} alt="Foto de perfil" width={112}></Image>
             </div>
-
+ 
+ 
             <div className="text-center sm:text-left">
-              <p className="text-base leading-relaxed text-tinta/85 sm:text-lg">
-                {BIO}
-              </p>
-
+              <p className="text-base leading-relaxed text-tinta/85 sm:text-lg">{t.about.bio}</p>
+ 
               <div className="mt-6 flex flex-wrap justify-center gap-2 sm:justify-start">
-                {FUN_FACTS.map((fact) => (
+                {t.about.funFacts.map((fact) => (
                   <span
                     key={fact.label}
                     className="sticker-btn inline-flex items-center gap-2 rounded-full bg-cielo px-3 py-1.5 text-xs font-medium text-tinta"
@@ -50,13 +43,13 @@ export default function About() {
                   </span>
                 ))}
               </div>
-
+ 
               <a
-                href={CV_PATH}
+                href={t.about.cvPath}
                 download
-                className="sticker-btn mt-8 inline-flex items-center gap-2 rounded-full bg-neon px-6 py-3 font-display text-sm text-tinta"
+                className="sticker-btn mt-8 inline-flex items-center gap-2 rounded-full bg-neon px-6 py-3 font-display text-sm text-white"
               >
-                ⬇ Descargar CV
+                ⬇ {t.about.cvButton}
               </a>
             </div>
           </div>
@@ -65,3 +58,8 @@ export default function About() {
     </section>
   );
 }
+ 
+       
+
+              
+  
