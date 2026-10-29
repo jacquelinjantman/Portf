@@ -17,7 +17,8 @@ export const translations = {
       contacto: "Contacto",
     },
     hero: {
-      greeting: "Hi !",
+      greeting: "Hola !",
+      availability: "Disponible para nuevas oportunidades",
       role: "Fullstack Developer",
       intro: "Diseño y construyo sitios y aplicaciones con Next.js, cuidando cada detalle.",
       ctaProjects: "Ver proyectos",
@@ -82,6 +83,7 @@ export const translations = {
     },
     hero: {
       greeting: "Hi !",
+      availability: "Available for new opportunities",
       role: "Fullstack Developer",
       intro: "I design and build websites and applications with Next.js, paying attention to every detail.",
       ctaProjects: "View projects",
@@ -145,7 +147,8 @@ export const translations = {
       contacto: "Contato",
     },
     hero: {
-      greeting: "Hi !",
+      greeting: "oi !",
+        availability: "Disponível para novas oportunidades",
       role: "Fullstack Developer",
       intro: "Eu projeto e construo sites e aplicações com Next.js, cuidando de cada detalhe.",
       ctaProjects: "Ver projetos",

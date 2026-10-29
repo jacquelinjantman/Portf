@@ -30,7 +30,13 @@ export default function Hero() {
         <h1 className="bubble-text hero-bounce-in mt-4 font-display text-5xl leading-[1.3] sm:text-6xl md:text-7xl">
           {NAME}
         </h1>
-
+<div
+  className="hero-rise sticker-btn mx-auto mt-4 inline-flex w-fit items-center gap-2 rounded-full bg-menta px-4 py-1.5"
+  style={{ animationDelay: "0.05s" }}
+>
+  <span className="pulse-dot size-2 rounded-full bg-tinta" aria-hidden="true" />
+  <span className="text-xs font-medium text-tinta sm:text-sm">{t.hero.availability}</span>
+</div>
         <p
           className="hero-bounce-in sticker-btn mx-auto mt-6 inline-block rounded-full bg-merino px-6 py-2 font-display text-lg sm:text-xl"
           style={{ animationDelay: "0.15s" }}
