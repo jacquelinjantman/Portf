@@ -1,9 +1,11 @@
 "use client";
 
+import { useLanguage } from "@/i18n/Language";
 import { motion } from "framer-motion";
 import { type Certificate, certificates } from "@/data/certificate";
 
 export default function Certificate() {
+    const { t, locale} = useLanguage();
   return (
     <section
       id="certs"
@@ -42,7 +44,7 @@ export default function Certificate() {
           textAlign: "center",
         }}
       >
-        Certificates
+        {t.certificates.title}
       </motion.h2>
 
       <p
@@ -53,10 +55,7 @@ export default function Certificate() {
           lineHeight: 2,
         }}
       >
-        Certificados obtenidos en diferentes cursos y programas de formación,
-        que demuestran mi compromiso con el aprendizaje continuo y el desarrollo
-        de habilidades en diversas áreas. Cada certificado representa un logro
-        significativo en mi trayectoria educativa y profesional.
+        {t.certificates.description}
       </p>
 
       {/* GRID */}
@@ -109,7 +108,7 @@ export default function Certificate() {
                 fontFamily: "'Press Start 2P', monospace",
               }}
             >
-              {cert.name}
+              {cert.name[locale]}
             </p>
             <p
               style={{
@@ -119,7 +118,7 @@ export default function Certificate() {
                 fontFamily: "'Press Start 2P', monospace",
               }}
             >
-              {cert.issuer}
+              {cert.issuer[locale]}
             </p>
             <p
               style={{

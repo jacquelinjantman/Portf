@@ -7,7 +7,7 @@ const GITHUB = "https://github.com/jacquelinjantman";
 const LINKEDIN = "https://www.linkedin.com/in/jacquelin-jantman-362365227/";
 
 export default function Contact() {
-  const { t } = useLanguage();
+  const { t} = useLanguage();
 
   return (
     <section id="contacto" className="px-6 py-24">

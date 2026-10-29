@@ -54,6 +54,8 @@ export const translations = {
     certificates: {
       label: "Achievements",
       title: "Certificados",
+      description:
+    "Certificados obtenidos en diferentes cursos y programas de formación, que demuestran mi compromiso con el aprendizaje continuo y el desarrollo de habilidades en diversas áreas. Cada certificado representa un logro significativo en mi trayectoria educativa y profesional."
     },
     contact: {
       label: "Send data",
@@ -111,6 +113,8 @@ export const translations = {
     certificates: {
       label: "Achievements",
       title: "Certificates",
+       description:
+    "Certificates earned through various courses and training programs, demonstrating my commitment to continuous learning and skill development across multiple fields. Each certificate represents a significant achievement in my educational and professional journey."
     },
     contact: {
       label: "Send data",
@@ -168,6 +172,8 @@ export const translations = {
     certificates: {
       label: "Achievements",
       title: "Certificados",
+      description:
+    "Certificados obtidos em diferentes cursos e programas de formação que demonstram meu compromisso com o aprendizado contínuo e o desenvolvimento de competências em diversas áreas. Cada certificado representa uma conquista significativa na minha trajetória educacional e profissional."
     },
     contact: {
       label: "Send data",

@@ -1,5 +1,5 @@
-import type { Locale } from "@/i18n/Translations";
 
+import type { Locale } from "@/i18n/Translations";
 export type Project = {
   id: number;
   mission: Record<Locale, string>;
@@ -138,7 +138,7 @@ export const projects: Project[] = [
       pt: "API REST para gestão de um centro de saúde desenvolvida com Java e Spring Boot, contendo autenticação JWT, autorização por papéis e gerenciamento de consultas.",
     },
 
-    tags: ["Java"],
+    tags: ["Java", "Spring Boot", "JWT", "REST API"],
 
     demo: "",
     code: "https://github.com/jacquelinjantman/Hospital-Backend",
