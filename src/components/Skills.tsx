@@ -56,7 +56,7 @@ function StatBar({ name, emoji, level }: { name: string; emoji: string; level: n
           <span
             key={i}
             className={`h-4 flex-1 rounded-sm border-2 border-tinta ${
-              i < level ? "bg-neon" : "bg-tarjeta"
+              i < level ? "bg-lila" : "bg-tarjeta"
             }`}
           />
         ))}
